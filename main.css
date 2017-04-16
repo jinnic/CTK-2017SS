@@ -114,7 +114,7 @@ a{
 }
 
 /*contact page*/
-#contact {
+.contact {
     position: absolute;
     bottom: 0;
 }
