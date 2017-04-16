@@ -43,7 +43,7 @@ a{
     font-size: 2em;
 }
 
-.home{
+.split{
     display: block;
     position: relative;
     width: 50%;
@@ -53,7 +53,7 @@ a{
 
 .left-holder {
     min-height: 1px;
-    background-color:gray;
+    background-color:white;
     float:left;
 }
 
@@ -111,4 +111,28 @@ a{
     height: 100%;
     background-color: darkorange;
     opacity: 1;
+}
+
+/*contact page*/
+#contact {
+    position: absolute;
+    bottom: 0;
+}
+
+
+.left{
+    right:0;
+    margin-left: 20%;
+    background-color: white;
+}
+
+.right{
+    margin-right: 20%;
+    left:0;
+    font-size: 20px;
+/*    margin-bottom: 100px;*/
+    color: white;
+    background-color: black;
+    height: 200px;
+    padding-right: 10px;
 }
