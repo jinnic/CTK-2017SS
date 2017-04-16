@@ -9,6 +9,7 @@ body{
 }
 #container{
         height: 100vh;
+    background-color: white;
     }
 a:hover{
     opacity: .5;
@@ -142,13 +143,9 @@ a{
 
 /*mobile version */
 @media screen and (max-width: 768px) and (orientation:portrait){
-/*
     #container{
-        transform: rotate(90deg);
-        width: 100vh;
-        height: 100vw;
+        background-color:#000000;
     }
-*/
     .split{
         display: block;
         position: relative;
@@ -166,6 +163,7 @@ a{
 
     .right-holder {
         min-height: 1px;
+        background-color:white;
 /*        float: right;*/
     }
     .trans-image {
