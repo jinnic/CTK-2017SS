@@ -1,11 +1,10 @@
- <!DOCTYPE html> 
-
+<!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script> 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="js/isInViewport.js"></script>
   <title>Christine Tantiwa Kinson - Home</title>
   
   <meta name="description" content="Christine Tantiwa Kinson - contemporary sports wear">
@@ -14,7 +13,8 @@
 <!--favicon goes here-->
 <!--  <link rel="shortcut icon" sizes="196x196" href="images/icon.png">-->
  
- <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Poppins:400,500" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Poppins:400,500" rel="stylesheet">-->
+ <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600" rel="stylesheet">
  
   <link rel="stylesheet" href="normalize.css" > 
   <link rel="stylesheet" href="main.css" > 
@@ -26,7 +26,7 @@
     <!-- navigation button -->
        <div class="menu">
         <a href="index.html" class="main" title="Christine Tantiwa Kinson">CTK</a>
-        <a href="about.html" class="about"  title="About Christine Tantiwa Kinson">About</a>
+        <a href="#about" class="about"  title="About Christine Tantiwa Kinson">About</a>
         <a href="collection.html" class="collection" title="Collection S/S 2016">Collection</a>
        </div>
     <!--left container fading images-->
@@ -52,7 +52,7 @@
 
     </div>
     <!--right container-->
-    <div class="split right-holder">
+    <div id="scrollContainer" class="split right-holder">
         <div class="scroll-image">
             <div class="sImage01">
                <div style="background-color: yellowgreen; width: 40vh; height: 40vh; margin: auto;"></div>
@@ -88,8 +88,74 @@
             </div>
         </div>
     </div>
+<!--    end of splite right holder-->
+   
 </div>
+<!--
+     <div id="about">
+           <div id="video">
+                <video src="video.mp4" controls>
+                    Sorry, your browser doesn't support embedded videos, 
+                    but don't worry, you can <a href="videofile.webm">download it</a>
+                    and watch it with your favorite video player!
+                </video>
+               
+           </div>
+            <div class="left">
+                <p>
+                    Christine Tantiwa Kinson established her London based menswear line in 2015, after graduating from the prestigious Royal College of Art with a Master’s degree in Fashion Menswear. With a strong focus on technical outerwear, Wang’s garments range from the relatively minimal to the boldly conceptual and wholly futuristic, always with a forward-thinking functionality.
+                </p>
+                <p>
+                    Each collection is inspired by Wang’s life experiences and social interactions, tackling subject matter that is both deeply intimate and widely relatable.
+                </p>
+                <p>
+                    In her Autumn/Winter collection for the 2017/18 season, inspiration comes from the world as experienced through the senses. The body remains a point of focus through flesh-tones and skin-like textures. Fabric covers and interacts with the human form in ruching and rolls, gathering to form cocoons that reflecting a fundamental human need: to feel safe.
+                </p>
+            </div>
+            
+            <div class="right">
+                <p>
+                    <span>contact</span><br>
+                    hello@christinekinson.com<br>
+                    @christinekinson
+
+                </p>
+                <p>
+                    photography by<br>
+                    Jessica Frankland<br>
+                    
+                    designed by<br>
+                    Ryan Smith, Sun Jaegal & Hyojin Yoo<br>
+                    
+                    coded by<br>
+                    Hyojin Yoo
+                </p>
+                <p>
+                    ©Christine Kinson
+                </p>
+            </div>
+        </div>
+-->
+
 <script type="text/javascript" src="main.js"></script>
+<script>
+//       (function($) {
+//          $(document).ready(function() {
+//           
+//              $(window).scroll(function() {
+//                if ($('video').is(":in-viewport")) {
+//                    $('video').play();
+//                    console.log("video in viewport");
+//                } else {
+//                    $('video').pause();
+//                    console.log("video NOT in viewport");
+//                }
+//              });
+//          });
+//        }(jQuery));
+
+
+    </script> 
 <!--end of body-->
 </body>
 </html>

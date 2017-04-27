@@ -5,7 +5,12 @@
 body{
     height: 100vh;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+/*    font-family: 'Poppins', sans-serif;*/
+    font-family: 'Work Sans', sans-serif;
+}
+
+p{
+    margin-top: 0;
 }
 #container{
         height: 100vh;
@@ -47,21 +52,23 @@ a{
 }
 
 .split{
+/*
     display: block;
     position: relative;
+*/
     width: 50%;
     padding: 0;
-    height: 100%;
+/*    height: 100%;*/
 }
 
 .left-holder {
-    min-height: 1px;
+    min-height: 100vh;
     background-color:white;
     float:left;
 }
 
 .right-holder {
-    min-height: 1px;
+    min-height: 100vh;
     float: right;
 }
 
@@ -71,6 +78,7 @@ a{
     opacity: 1;
     font-size: 60vh;
     position: fixed;
+/*    z-index: -1;*/
     text-align: center;
     vertical-align: middle;
     line-height: 100vh;
@@ -78,14 +86,18 @@ a{
 
  .scroll-image{
    width: 100%;
-    height: 100%;
+    height: 100vh;
     opacity: 1;
+     
     text-align: center;
      display:flex;
      justify-content:center;
      align-items:center;
 }
 
+#scrollContainer{
+    height: 500vh;
+}
 .image01{
     height: 100%;
     background-color: yellowgreen;
@@ -116,13 +128,28 @@ a{
     opacity: 1;
 }
 
-/*contact page*/
-.contact {
-    position: absolute;
-    bottom: 0;
+/*about page*/
+
+#video{
+    width: 100vw;
+    margin: auto;
+/*    height: 100vh;*/
+/*
+    vertical-align: middle;
+    line-height: 70vh;
+*/
+    
+  
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
+video{
+    width: 100%;
+}
 
+/*
 .left{
     right:0;
     margin-left: 20%;
@@ -133,13 +160,46 @@ a{
     margin-right: 20%;
     left:0;
     font-size: 20px;
-/*    margin-bottom: 100px;*/
+    margin-bottom: 100px;
     color: white;
     background-color: black;
     height: 200px;
     padding-right: 10px;
 }
+*/
+.left{
+    width: 60%;
+    float: left;
+     box-sizing: border-box;
+/*    background-color: lightgray;*/
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 100px 10% 0;
 
+}
+
+.right{
+   width: 40%;
+    float: right;
+    padding: 100px 50px;
+    box-sizing: border-box;
+    background-color: lightgray;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 160%;
+
+}
+
+
+
+#about{
+    height: 200vh;
+    position: relative;
+    clear: both;
+    background-color: lightgray;
+    z-index: 4;
+}
 
 /*mobile version */
 @media screen and (max-width: 768px) and (orientation:portrait){
