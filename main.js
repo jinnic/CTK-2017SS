@@ -59,7 +59,19 @@ var fadeScroll = function(){
 };
 */
 
-fadeOnScroll();
+
+
+
+
+
+$(document).ready(function(){
+    $("#scrollContainer").scroll(function(){
+        fadeOnScroll();
+        var p = $(".scroll-image:first").position();
+        console.log("first scroll-image is at : " + p.top);
+        
+    });
+});
 
 // $("#scrollContainer").on("scroll", function () {
 //    
