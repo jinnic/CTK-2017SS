@@ -14,8 +14,8 @@ var fadeOnScroll = function () {
 
     var docWidth = $(document).width(),
         scrollDiv = $("#scrollContainer"),
-        scrollPos = scrollDiv.scrollTop,
-        docHeight = scrollDiv.height,
+        scrollPos = scrollDiv.scrollTop(),
+        docHeight = scrollDiv.height(),
         scrollPercentage = scrollPos / docHeight,
         uniqueValue = scrollPercentage * (images.length),
         opacityValue,
