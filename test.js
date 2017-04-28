@@ -1,4 +1,6 @@
-document.getElementById("scrollContainer").onscroll = function() {detactY()};
+//document.getElementById("scrollContainer").onscroll = function() {
+//    detactY();
+//};
 
 
 function detactY(){
@@ -12,3 +14,10 @@ function detactY(){
 //    console.log("current y position of first croll-image" + y);
 
 };
+
+
+$(document).ready(function(){
+    $("#scrollContainer").scroll(function(){
+        detactY();
+    });
+});
