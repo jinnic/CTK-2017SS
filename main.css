@@ -13,7 +13,7 @@ p{
     margin-top: 0;
 }
 #container{
-        height: 100vh;
+    height: 100vh;
     background-color: white;
     }
 a:hover{
@@ -95,10 +95,10 @@ a{
     align-items:center;
 }
 
-#scrollContainer{
+/*#scrollContainer{
     height: 500vh;
     overflow: scroll;
-}
+}*/
 .image01{
     height: 100%;
     background-color: yellowgreen;
@@ -223,7 +223,7 @@ video{
     }
 
     .right-holder {
-        min-height: 1px;
+        min-height: 100vh;
         background-color:white;
 /*        float: right;*/
     }
@@ -240,7 +240,7 @@ video{
 
     .scroll-image{
         width: 100%;
-        height: 50%;
+        height: 50vh;
         opacity: 1;
         text-align: center;
          display:flex;
