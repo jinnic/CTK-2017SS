@@ -94,10 +94,18 @@ $(document).ready(function() {
 	    
 	};
 
+	// go to about page
 
 	$(".about").click(function() {
 	    $('html,body').animate({
 	        scrollTop: $("#about").offset().top},
+	        'slow');
+	});
+
+	//back to top
+	$(".back").click(function() {
+	    $('html,body').animate({
+	        scrollTop: $("#container").offset().top},
 	        'slow');
 	});
 });

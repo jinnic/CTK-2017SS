@@ -188,6 +188,7 @@ video{
 
 .right{
    width: 40%;
+   height: 100%;
     float: right;
     padding: 100px 50px;
     box-sizing: border-box;
