@@ -1,6 +1,8 @@
 
 var scrollContainer_totalHeight = 0;
 
+
+
 $(document).ready(function() {
 
 	var totalScrollImageHeight =function(){
@@ -91,5 +93,12 @@ $(document).ready(function() {
 	//    $(window).scrollTop() + $(window).height() === $(document).height() && $(window).width() > 992 && $(document).scrollTop(0);
 	    
 	};
+
+
+	$(".about").click(function() {
+	    $('html,body').animate({
+	        scrollTop: $("#about").offset().top},
+	        'slow');
+	});
 });
 
