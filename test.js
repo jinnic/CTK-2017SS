@@ -5,6 +5,23 @@ var scrollContainer_totalHeight = 0;
 
 $(document).ready(function() {
 
+
+
+	// modal
+
+$(".modal-fullscreen").on('show.bs.modal', function () {
+  setTimeout( function() {
+    $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+  }, 0);
+});
+$(".modal-fullscreen").on('hidden.bs.modal', function () {
+  $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+});
+
+
+
+	// finding total scroll image height
+
 	var totalScrollImageHeight =function(){
 		scrollContainer_totalHeight = 0;
 		$("#scrollContainer > div.scroll-image").each(function(){
@@ -34,6 +51,8 @@ $(document).ready(function() {
 			           $(".trans-image:first").css("top",0 + "vh")
 			       }
 			  	});
+
+			      
 
 			    // console.log("WINDOW scrolling!!!");
 			    // checkScroll();
