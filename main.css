@@ -16,6 +16,7 @@ p{
     height: 100vh;
     background-color: white;
     }
+    
 a:hover{
     opacity: .5;
 }
@@ -180,8 +181,8 @@ video{
 */
 .left{
     width: 60%;
-    height: 100%;
-    float: left;
+/*    height: 100%;
+*/    float: left;
      box-sizing: border-box;
     background-color: white;
     font-size: 26px;

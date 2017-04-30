@@ -43,13 +43,27 @@ $(".modal-fullscreen").on('hidden.bs.modal', function () {
 			    $('video').each(function(){
 			       if ($(this).is(':in-viewport')) {
 			           $(this)[0].play();
-			           console.log("video in viewport");
-			           $(.menu).hide();
+			           // console.log("video in viewport");
+			           $(".menu").hide();
 
 			       } else {
 			           $(this)[0].pause();
-			           console.log("video NOT in viewport");
-			           // $(.menu).show();
+			           // console.log("video NOT in viewport");
+			           $(".menu").show();
+			           // $(".trans-image:first").css("top",0 + "vh")
+			       }
+			  	});
+
+			  	$(".left ").each(function(){
+			       if ($(this).is(':in-viewport')) {
+			           
+			           $(".menu").hide();
+			           console.log("left in viewport");
+
+			       } else {
+			          
+			           $(".menu").show();
+			           console.log("left NOT in viewport");
 			           // $(".trans-image:first").css("top",0 + "vh")
 			       }
 			  	});
