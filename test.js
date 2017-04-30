@@ -40,19 +40,21 @@ $(".modal-fullscreen").on('hidden.bs.modal', function () {
 				// $( "#demo2" ).html( "Vertically: " + LBy.top + "px" );
 				// console.log("#myDiv scrolling!!!");
 
-			      $('video').each(function(){
+			    $('video').each(function(){
 			       if ($(this).is(':in-viewport')) {
 			           $(this)[0].play();
 			           console.log("video in viewport");
+			           $(.menu).hide();
 
 			       } else {
 			           $(this)[0].pause();
 			           console.log("video NOT in viewport");
-			           $(".trans-image:first").css("top",0 + "vh")
+			           // $(.menu).show();
+			           // $(".trans-image:first").css("top",0 + "vh")
 			       }
 			  	});
 
-			      
+
 
 			    // console.log("WINDOW scrolling!!!");
 			    // checkScroll();
