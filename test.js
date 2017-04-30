@@ -50,7 +50,7 @@ $(".modal-fullscreen").on('hidden.bs.modal', function () {
 			           $(this)[0].pause();
 			           // console.log("video NOT in viewport");
 			           $(".menu").show();
-			           // $(".trans-image:first").css("top",0 + "vh")
+			           $(".trans-image:first").css("top",0 + "vh")
 			       }
 			  	});
 
