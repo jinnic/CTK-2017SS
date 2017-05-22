@@ -9,16 +9,18 @@ $(document).ready(function() {
 
 	// modal
 
-$(".modal-fullscreen").on('show.bs.modal', function () {
-  setTimeout( function() {
-    $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
-  }, 0);
-});
-$(".modal-fullscreen").on('hidden.bs.modal', function () {
-  $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
-});
+    // $(".modal-fullscreen").on('show.bs.modal', function () {
+    //   setTimeout( function() {
+    //     $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+    //   }, 0);
+    // });
 
+    // $(".modal-fullscreen").on('hidden.bs.modal', function () {
+    //   $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+    // });
 
+    //carousel
+    // $("#carouselEx").carousel();
 
 	// finding total scroll image height
 
@@ -28,7 +30,7 @@ $(".modal-fullscreen").on('hidden.bs.modal', function () {
 			scrollContainer_totalHeight += $(this).height();
 		});
 		console.log("Total height of all divs: "+scrollContainer_totalHeight);
-	}
+	};
 
 
 	$(window).scroll(function() {
@@ -43,14 +45,14 @@ $(".modal-fullscreen").on('hidden.bs.modal', function () {
 			    $('video').each(function(){
 			       if ($(this).is(':in-viewport')) {
 			           $(this)[0].play();
-			           // console.log("video in viewport");
+			           console.log("video in viewport");
 			           $(".menu").hide();
 
 			       } else {
 			           $(this)[0].pause();
-			           // console.log("video NOT in viewport");
+			           console.log("video NOT in viewport");
 			           $(".menu").show();
-			           $(".trans-image:first").css("top",0 + "vh")
+			           $(".trans-image:first").css("top",0 + "vh");
 			       }
 			  	});
 
@@ -58,12 +60,12 @@ $(".modal-fullscreen").on('hidden.bs.modal', function () {
 			       if ($(this).is(':in-viewport')) {
 			           
 			           $(".menu").hide();
-			           console.log("left in viewport");
+			           // console.log("left in viewport");
 
 			       } else {
 			          
 			           $(".menu").show();
-			           console.log("left NOT in viewport");
+			           // console.log("left NOT in viewport");
 			           // $(".trans-image:first").css("top",0 + "vh")
 			       }
 			  	});
@@ -81,7 +83,7 @@ $(".modal-fullscreen").on('hidden.bs.modal', function () {
 	    
 	    var docWidth = $(document).width(),
 	        scrollPos = $(window).scrollTop(),
-	        docHeight = $(document).height(),
+	        //docHeight = $(document).height(),
 	        scrollPercentage = scrollPos / scrollContainer_totalHeight,
 	        uniqueValue = scrollPercentage * (images.length),
 	        opacityValue,
@@ -105,15 +107,15 @@ $(".modal-fullscreen").on('hidden.bs.modal', function () {
 
 	           	var movePos = -(uniqueValue-4)*100/2;
 
-	           		$(".trans-image:first").css("top",movePos + "vh")
+	           		$(".trans-image:first").css("top",movePos + "vh");
 	           	console.log(movePos);
 	           }
 	       }
 	   }else{
 
-	       for (var i = 1; i <= images.length; i++) {
-	            opacityValue = i - uniqueValue;
-	           $(images[i-1]).css("opacity", opacityValue);
+	       for (var j = 1; j <= images.length; j++) {
+	            opacityValue = j - uniqueValue;
+	           $(images[j-1]).css("opacity", opacityValue);
 	           // console.log('uniqueVal: ' + uniqueValue);
 	           // console.log('scrollPos: ' + scrollPos);
 	           // console.log('docHeight: ' + docHeight);
@@ -143,5 +145,18 @@ $(".modal-fullscreen").on('hidden.bs.modal', function () {
 	        scrollTop: $("#container").offset().top},
 	        'slow');
 	});
+
+	$(".trans-image").click(function(){
+		$("#carouselEx").hide();
+
+        $('.modal-body').append('<div id="videoFull"> <video src="video.mp4" controls autoplay> Sorry, your browser doesnt support embedded videos, but dont worry, you can <a href="videofile.webm">download it</a> and watch it with your favorite video player!</video> </div>');
+     
+     });
+
+	$('#modal-fullscreen').on('hidden.bs.modal', function (e) {
+		 $("#videoFull").remove();
+		 $("#carouselEx").show();
+	});
+
 });
 

@@ -71,6 +71,19 @@ $(document).ready(function(){
         console.log("first scroll-image is at : " + p.top);
         
     });
+
+    $(".trans-image").click(function(){
+
+
+
+
+        $('.modal-body').append('<div id="video"> <video src="video.mp4" controls> Sorry, your browser doesnt support embedded videos, but dont worry, you can <a href="videofile.webm">download it</a> and watch it with your favorite video player!</video> </div>');
+     
+     });
+
+      $(".close").click(function() {
+        $("#video").remove();
+      });
 });
 
 // $("#scrollContainer").on("scroll", function () {
