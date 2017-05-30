@@ -192,7 +192,7 @@ video{
 
 #video img{
     position: absolute;
-    bottom: -76px;
+    bottom: -78px;
     right: calc(100% / 12);
     width: 500px;
 
@@ -594,12 +594,12 @@ width: 248px;
         width: 100%;
         margin: auto;
         vertical-align: middle;
-        display: flex;
+        /*display: flex;*/
     }
 
     #video img{
     position: absolute;
-    bottom: -86px;
+    bottom: -78px;
     right: calc( calc(100% - 500px) / 2);
     width: 500px;
 
@@ -726,12 +726,12 @@ cursor: pointer;
         width: 100%;
         margin: auto;
         vertical-align: middle;
-        display: flex;
+        /*display: flex;*/
     }
 
      #video img{
     position: absolute;
-    bottom: -86px;
+      bottom: -61px;
     right: calc( calc(100% - 400px) / 2);
     width: 400px;
 
