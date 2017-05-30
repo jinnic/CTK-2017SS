@@ -41,65 +41,69 @@
 <body>
 <div id="container">
 
+
     <!-- navigation button -->
        <div class="menu">
         <!-- <a href="index.html" class="main" title="Christine Tantiwa Kinson">CTK</a> -->
-        <a href="#about" class="about"  title="About Christine Tantiwa Kinson">About</a>
-        <a href="collection.html" class="collection" title="Collection S/S 2016">Collection</a>
+        <a class="about" title="About Christine Tantiwa Kinson">About</a>
+        <a data-toggle="modal" data-target="#modal-fullscreen" class="collection" title="Collection S/S 2016">Collection</a>
        </div>
 
     <!-- modal slide show -->
     
     <!-- TEST Button modal fullscreen -->
     <!-- <a id="abc" data-toggle="modal" data-target="#modal-fullscreen">open</a> -->
-    
+
 
     <!-- Modal fullscreen -->
     <div class="modal fade" id="modal-fullscreen" tabindex="-1" role="dialog" aria-hidden="true">
       <!-- HEADER PLACE FOR FIXED CLOSED BOX -->
-              <div class="modal-dialog" style="width:100vw;">
-        <div class="modal-content" >
-          <div class="modal-header">
+      <div class="modal-header">
             <div class="close" data-dismiss="modal" aria-label="Close">
               <p aria-hidden="true">&times;</p>
             </div>
-          </div>
-
-          <div class="modal-body" style="width:100%;">
-            
-    <!-- carousel -->
-
-                   <div id="carouselEx" class="carousel slide" >
-                    <div class="carousel-inner" role="listbox">
-                      <div class="carousel-item active">
-                        <img class="d-block img-fluid" src="image/ctk_01.jpg" alt="First slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block img-fluid" src="image/ctk_01.jpg" alt="Second slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block img-fluid" src="image/ctk_01.jpg" alt="Third slide">
-                      </div>
-                    </div>
-                    <a class="carousel-control-left" href="#carouselEx" data-slide="prev">
-                      <span  aria-hidden="true">&lt;</span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-right" href="#carouselEx" data-slide="next">
-                      <span  aria-hidden="true">&gt;</span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-
-
-          </div>
+      </div>
+      <div class="modal-dialog" style="width:100vw;">
+        <div class="modal-content" >
           
+          <div class="modal-body" style="width:100%;">
+                
+            <!-- carousel -->
+            <div id="carouselEx" class="carousel slide" >
+              
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+              </div>
+              <!-- Controls -->
+              <a class="carousel-control-left" href="#carouselEx" data-slide="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.8 52.8" style="width: 60%;"><title>Previous</title><polyline points="29 50 5.6 26.6 29 2.8" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:8px"/></svg>
+                  <!-- <span  aria-hidden="true">&lt;</span> -->
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-right" href="#carouselEx" data-slide="next">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.8 52.8" style="width: 60%;"><title>Next</title><polyline points="2.9 50 26.2 26.6 2.9 2.8" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:8px"/></svg>
+                <!-- <span  aria-hidden="true">&gt;</span> -->
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <!-- end of carousel -->
+            <!-- album -->
+            <div class="album">
+              <div class="row">
+              </div>
+              <div id="collectionBG_R">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226.5 256.7"><path d="M22.2,212.9H8.2C8,207.7,5,204.6,0,204.4v1c4.6.2,7.3,3,7.3,8v.5H23.2v-.5c0-9.5-7.2-19-23.2-19.1v.9C11,195.3,21.9,200.7,22.2,212.9Z"/><path d="M.9,219.1c11,3.5,22.4,7,22.4,18.8S14,255.7,0,255.8v.9c14.5,0,24.3-7.6,24.3-18.9s-11.7-16.1-23-19.7L0,217.8v1Z"/><path d="M.4,245.9c5.3,0,9.1-3,9.1-7.3s-4-6.5-9.4-8.3v1c5,1.7,8.5,3.4,8.5,7.3S5.1,245,.4,245H0v1Z"/><path d="M7.3,19.1v.5H23.2v-.5C23.2,9.6,16,.1,0,0V.9C11,1,21.9,6.5,22.2,18.6H8.2C8,13.5,5,10.4,0,10.2v1C4.6,11.3,7.3,14.2,7.3,19.1Z"/><path d="M.4,51.7c5.3,0,9.1-3,9.1-7.3s-4-6.5-9.4-8.3v1c5,1.7,8.5,3.4,8.5,7.3S5.1,50.7.4,50.7H0v1Z"/><path d="M24.3,43.6c0-12.4-11.7-16.1-23-19.7L0,23.5v1l.9.3c11,3.5,22.4,7,22.4,18.8S14,61.5,0,61.5v.9C14.5,62.4,24.3,54.9,24.3,43.6Z"/><path d="M47,61H62.9V14.2H82.9V1.5H27V14.2H47ZM28,13.2V2.5H82V13.2H61.9V60h-14V13.2Z"/><path d="M108.4,1.5H92.3V61h16.1ZM107.4,60H93.2V2.5h14.2Z"/><path d="M135.6,24.5,158.2,61h16.3V1.5H158.7V38.4L136.1,1.5H119.7V61h15.9ZM134.7,60h-14V2.5h14.9l24.1,39.3V2.5h13.9V60H158.7l-24-38.8Z"/><path d="M226.5,13.3V1.5H186.1V61h40.4V49.2H202.1V37.2h24.5V25.7H202.1V13.3Zm-.9,13.3v9.7H201.1V50.1h24.5V60H187.1V2.5h38.5v9.9H201.1V26.6Z"/><path d="M64,206.4c-9.2,0-19.1,6.7-19.1,19s9.8,19,19.1,19c12.4,0,19.1-9.8,19.1-19S76.4,206.4,64,206.4Zm0,37.1c-8.8,0-18.1-6.3-18.1-18.1s9.3-18.1,18.1-18.1c11.8,0,18.1,9.3,18.1,18.1S75.8,243.6,64,243.6Z"/><path d="M64,194.2c-22.4,0-34.1,15.7-34.1,31.2S41.7,256.7,64,256.7s34-15.7,34-31.2S86.4,194.2,64,194.2Zm0,61.5c-21.8,0-33.1-15.2-33.1-30.3S42.3,195.2,64,195.2s33.1,15.2,33.1,30.3S85.8,255.8,64,255.8Z"/><path d="M145.4,232.7l-22.6-36.9H106.5v59.5h15.9V218.8l22.5,36.4h16.3V195.7H145.4Zm.9-36h13.9v57.6H145.4l-24-38.8v38.8h-14V196.7h14.9L146.4,236Z"/><path d="M34.4,159.8H50.5V100.3H34.4Zm.9-58.5H49.6v57.6H35.4Z"/><path d="M126,159.8l21.1-59.5H131.7l-11.6,37.3-11.7-37.3H97.3L85.7,137.6,74,100.3H58.6l21,59.2v.3H91.6l11.3-35.7,11.3,35.7Zm-35.1-.9H80.4L60,101.3H73.3l12.4,39.5L98,101.3h9.8l12.4,39.5,12.3-39.5h13.4l-20.4,57.6H114.9l-12-37.9Z"/><path d="M161.9,100.3l-23.5,59.5h17l2.5-7.1h22.3l2.5,7.1H200l-23.7-59.5Zm21.5,58.5-2.5-7.1H157.3l-2.5,7.1H139.8l22.7-57.6h13.1l23,57.6Z"/><path d="M160.5,142.1h17L169.2,116Zm1.3-.9,7.3-22.1,7.1,22.1Z"/><polygon points="0 101.2 26.5 101.2 26.5 112 6.9 112 6.9 158.8 0 158.8 0 159.8 7.8 159.8 7.8 113 27.5 113 27.5 100.2 0 100.2 0 101.2"/></svg>
+              </div>
+              <div id="collectionBG_L">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 247.9 256.7"><polygon points="220.8 113 240.9 113 240.9 159.7 247.9 159.7 247.9 158.8 247.9 101.2 247.9 100.3 220.8 100.3 220.8 113"/><path d="M239.8,235.3v-.5H223.9v.5c0,12.6,9.4,20.9,24.1,21.3V244.8C242.9,244.2,239.8,240.6,239.8,235.3Z"/><path d="M225.7,211.7c0,11.7,10.8,15.3,22.2,19.2h0V217.3c-4.5-1.8-6.4-3.7-6.4-6.4s3.1-5.2,6.4-5.4V194.3C237.6,194.6,225.7,199.3,225.7,211.7Z"/><path d="M64,39.6V39H48.2v.3c-1.8,6.1-7.5,9.9-14.9,9.9-10.4,0-18-7.6-18-18.1s6.1-18.1,17.8-18.1c8.1,0,13.8,4.4,15.2,11.7v.4H64v-.5C62.1,9.9,49.6,0,32.9,0,23,0,14.6,3.3,8.6,9.5A31,31,0,0,0,0,31.2C0,46.8,11.4,62.5,33.1,62.5,49,62.5,61.4,53.3,64,39.6Z"/><polygon points="89.8 37.7 111.2 37.7 111.2 61 127 61 127 1.5 111.2 1.5 111.2 25.2 89.8 25.2 89.8 1.5 73.9 1.5 73.9 61 89.8 61 89.8 37.7"/><path d="M171.7,61h18.5L177.1,42.2a20.9,20.9,0,0,0,12.6-19.1c0-12.3-10.3-21.6-24-21.6H138V61H154V44.8h6.3ZM154,13.5h9.8a9.6,9.6,0,1,1,0,19.3H154Z"/><rect x="199.2" y="1.5" width="16.1" height="59.47"/><path d="M113.6,100.3,90.1,159.7h17l2.5-7.1H132l2.5,7.1h17.3L128,100.3Zm0,40.8,7.3-22.1L128,141Z"/><polygon points="174.2 123.3 196.8 159.7 213.1 159.7 213.1 100.3 197.3 100.3 197.3 137.2 174.7 100.3 158.3 100.3 158.3 159.7 174.2 159.7 174.2 123.3"/><polygon points="76.7 159.7 76.7 112.9 96.7 112.9 96.7 100.3 40.8 100.3 40.8 112.9 60.8 112.9 60.8 159.7 76.7 159.7"/><polygon points="108.1 195.7 87.9 219.7 87.9 195.7 72 195.7 72 255.2 87.9 255.2 87.9 231.3 108.1 255.2 127.4 255.2 101.4 225.5 127.4 195.7 108.1 195.7"/><rect x="133.7" y="195.7" width="16.1" height="59.47"/><polygon points="200.6 232.7 177.9 195.7 161.6 195.7 161.6 255.2 177.5 255.2 177.5 218.8 200 255.2 216.4 255.2 216.4 195.7 200.6 195.7 200.6 232.7"/><path d="M239.8,41.1v-.5H223.9v.5c0,12.6,9.4,20.9,24.1,21.3V50.6C242.9,49.9,239.8,46.4,239.8,41.1Z"/><path d="M225.7,17.4c0,11.7,10.8,15.3,22.2,19.2h0V23.1c-4.5-1.8-6.4-3.7-6.4-6.4s3.1-5.2,6.4-5.4V0C237.6.3,225.7,5,225.7,17.4Z"/></svg>
+              </div>
+            </div>
+            <!-- end of album -->
+          </div>       
         </div>
       </div>
     </div>
-
-    
-
+        
 
     <!--left container fading images-->
     <div class="split left-holder" data-toggle="modal" data-target="#modal-fullscreen">
@@ -124,35 +128,35 @@
     <!--right container-->
     <div id="scrollContainer" class="split right-holder">
         <div class="scroll-image" >
-            <div class="sImage01" data-toggle="modal" data-target="#modal-fullscreen">
+            <div class="sImage" id="sImage01" data-toggle="modal" data-target="#modal-fullscreen">
                <div style="background-color: yellowgreen; width: 40vh; height: 40vh; margin: auto;"></div>
                 <p>test text 01d 3sfd</p>
             </div>
         </div>
 
         <div class="scroll-image">
-            <div class="sImage02"  data-toggle="modal" data-target="#modal-fullscreen">
+            <div class="sImage" id="sImage02"  data-toggle="modal" data-target="#modal-fullscreen">
                 <div style="background-color: darkseagreen; width: 40vh; height: 40vh; margin: auto;"></div>
                 <p>test text 02d 3sfd</p>
             </div>
         </div>
 
         <div class="scroll-image">
-            <div class="sImage03" data-toggle="modal" data-target="#modal-fullscreen">
+            <div class="sImage" id="sImage03" data-toggle="modal" data-target="#modal-fullscreen">
                <div style="background-color: darkslateblue; width: 40vh; height: 40vh; margin: auto;"></div>
                 <p>test text 03d 3sfd</p>
             </div>
         </div>
 
         <div class="scroll-image">
-            <div class="sImage04" data-toggle="modal" data-target="#modal-fullscreen">
+            <div class="sImage" id="sImage04" data-toggle="modal" data-target="#modal-fullscreen">
                <div style="background-color: darkgoldenrod; width: 40vh; height: 40vh; margin: auto;"></div>
                 <p>test text 04d 3sfd</p>
             </div>
         </div>
 
         <div class="scroll-image">
-            <div class="sImage05" data-toggle="modal" data-target="#modal-fullscreen">
+            <div class="sImage" id="sImage05" data-toggle="modal" data-target="#modal-fullscreen">
                <div style="background-color: darkorange; width: 40vh; height: 40vh; margin: auto;"></div>
                 <p>test text 05d 3sfd</p>
             </div>
@@ -162,62 +166,58 @@
    
 </div>
      <div id="about">
+          
            <div id="video">
                 <video src="video.mp4" controls>
                     Sorry, your browser doesn't support embedded videos, 
                     but don't worry, you can <a href="videofile.webm">download it</a>
                     and watch it with your favorite video player!
                 </video>
+                <img src="image/ss2017.svg">
                
            </div>
-            <div class="left">
-                <p>
-                    Christine Tantiwa Kinson established her London based menswear line in 2015, after graduating from the prestigious Royal College of Art with a Master’s degree in Fashion Menswear. With a strong focus on technical outerwear, Wang’s garments range from the relatively minimal to the boldly conceptual and wholly futuristic, always with a forward-thinking functionality.
-                </p>
-                <p>
-                    Each collection is inspired by Wang’s life experiences and social interactions, tackling subject matter that is both deeply intimate and widely relatable.
-                </p>
-                <p>
-                    In her Autumn/Winter collection for the 2017/18 season, inspiration comes from the world as experienced through the senses. The body remains a point of focus through flesh-tones and skin-like textures. Fabric covers and interacts with the human form in ruching and rolls, gathering to form cocoons that reflecting a fundamental human need: to feel safe.
-                </p>
-            </div>
-            
-            <div class="right">
-                <p>
-                    <span>contact</span><br>
-                    hello@christinekinson.com<br>
-                    @christinekinson
+           <div class="about_container">
+              <div class="left">
+                  <p>
+                      Christine Tantiwa Kinson established her London based menswear line in 2015, after graduating from the prestigious Royal College of Art with a Master’s degree in Fashion Menswear. With a strong focus on technical outerwear, Wang’s garments range from the relatively minimal to the boldly conceptual and wholly futuristic, always with a forward-thinking functionality.
+                  </p>
+                  <p>
+                      Each collection is inspired by Wang’s life experiences and social interactions, tackling subject matter that is both deeply intimate and widely relatable.
+                  </p>
+                  <p>
+                      In her Autumn/Winter collection for the 2017/18 season, inspiration comes from the world as experienced through the senses. The body remains a point of focus through flesh-tones and skin-like textures. Fabric covers and interacts with the human form in ruching and rolls, gathering to form cocoons that reflecting a fundamental human need: to feel safe.
+                  </p>
+              </div>
+              
+              <div class="right">
+                  <p>
+                      <span>contact</span><br>
+                      hello@christinekinson.com<br>
+                      @christinekinson
 
-                </p>
-                <p>
-                    photography by<br>
-                    Jessica Frankland<br>
-                    
-                    designed by<br>
-                    Ryan Smith, Sun Jaegal & Hyojin Yoo<br>
-                    
-                    coded by<br>
-                    Hyojin Yoo
-                </p>
-                <p>
-                    ©Christine Kinson
-                </p>
+                  </p>
+                  <p>
+                      photography by<br>
+                      Jessica Frankland<br>
+                      
+                      designed by<br>
+                      Ryan Smith, Sun Jaegal & Hyojin Yoo<br>
+                      
+                      coded by<br>
+                      Hyojin Yoo
+                  </p>
+                  <p>
+                      ©Christine Kinson
+                  </p>
 
-                <a  class="back"  title="back to top">back to top</a>
+                  <a class="back"  title="back to top">back to top</a>
+              </div>
             </div>
         </div>
 
 
-<script type="text/javascript" src="test.js"></script>
-<script type="text/javascript">
+<script type="text/javascript" src="js/main.js"></script>
 
-
-      $('.carousel').carousel({
-  interval: 1500
-})
-     
-
-</script>
 
 <!--end of body-->
 </body>

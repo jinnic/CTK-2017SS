@@ -30,7 +30,9 @@ a{
 }
 
 a:hover{
+    color:black;
     opacity: .5;
+    text-decoration:none;
 }
 
 .menu{
@@ -45,6 +47,7 @@ a:hover{
     top: 40px;
     text-align: center;
     z-index: 300;
+    cursor: pointer;
     /*transform: rotate(-90deg);*/
 } 
     
@@ -55,6 +58,7 @@ a:hover{
     /*transform: rotate(90deg);*/
     text-align: center;
     z-index: 300;
+    cursor: pointer;
 } 
 .main {
     position: fixed;
@@ -156,6 +160,12 @@ div.scroll-image > div {
 }
 /*about page*/
 
+#videoFull{
+    width: 80vw;
+    margin: auto;
+}
+
+
 #video{
     width: 100vw;
     margin: auto;
@@ -167,14 +177,22 @@ div.scroll-image > div {
     
   
     display:flex;
-    justify-content:center;
-    align-items:center;
+    /*justify-content:center;
+    align-items:center;*/
+    position: relative;
 }
 
 video{
     width: 100%;
 }
 
+#video img{
+    position: absolute;
+    bottom: -86px;
+    right: calc(100% / 12);
+    width: 500px;
+
+}
 /*
 .left{
     right:0;
@@ -193,54 +211,115 @@ video{
     padding-right: 10px;
 }
 */
+
+.about_container{
+    margin: auto;
+    margin-top: 86px;
+    display: table;
+
+    width: calc(100vw * 2/3);
+
+}
+.left{
+    width: calc(calc(100vw / 12) * 6);
+/*    height: 100%;
+    float: left;*/
+    box-sizing: border-box;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 100px 0 100px;
+    display: table-cell;
+    padding-right: calc(100vw / 12);
+    
+
+}
+
+.right{
+    position: relative;
+    width: calc(calc(100vw / 12) * 2);
+/*    height: 100%;
+    float: right;*/
+    padding: 100px 0 100px;
+    box-sizing: border-box;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 160%;
+    display: table-cell;
+}
+
+/*older version*/
+
+/*
+.about_container{
+    margin-top: 86px;
+    display: table;
+
+}
 .left{
     width: 60%;
-/*    height: 100%;
-*/    float: left;
+
      box-sizing: border-box;
     background-color: white;
     font-size: 26px;
     font-weight: 400;
     line-height: 150%;
     padding: 100px 10% 50px;
+    display: table-cell;
 
 }
 
 .right{
+    position: relative;
    width: 40%;
    height: 100%;
-    float: right;
-    padding: 100px 50px;
+    padding: 100px 10% 50px;
     box-sizing: border-box;
     background-color: white;
     font-size: 18px;
     font-weight: 300;
     line-height: 160%;
+    display: table-cell;
+}*/
 
+.back{
+    position: absolute;
+    bottom: calc(100px + 1em);
+    font-weight: 400;
 }
 
 
-
 #about{
-    height: 100%;
+    height: auto;
     position: relative;
     clear: both;
-    background-color: lightgray;
+    background-color: white;
     z-index: 400;
 }
 
 
 /*modal*/
-
-.modal-backdrop, .fade, .show{
+.fade, .show, .modal-backdrop{
     background-color: white;
-    background-image: url(image/slideBG.jpg);
+   /* background-image: url(image/SlideBG.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+ #modal-fullscreen{
+    background-color: white;
+    background-image: url(image/SlideBG.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
-
+.modal-body{
+    padding: 0;
+}
 
 .modal-dialog{
     margin: 0;
@@ -254,7 +333,7 @@ video{
     height: auto;
     border-radius: 0;
     border-style: none;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     position: absolute;
     top: 50%;
     left: 50%;
@@ -282,13 +361,15 @@ video{
 
 .modal-header{
     position: fixed;
-    right: 50px;
-    top: 50px;
+    right: 30px;
+    top: 30px;
     z-index: 900;
-    border:none;
+    border: none;
+    padding: 0;
 }
 
 /*version that tags along the slide*/
+/*
 .modal-header {
     position: fixed;
     right: -60px;
@@ -296,24 +377,23 @@ video{
     z-index: 900;
     border: none;
 }
-
+*/
 
 
 .close:hover{
-     color: gray;
-     opacity: 1;
+     opacity: 0.5;
 
 }
 
 .close{
         /* float: right; */
-    font-size: 70px;
+    font-size: 90px;
     font-weight: 700;
     /* line-height: 1; */
     /* color: #000; */
     /* text-shadow: 0 1px 0 #fff; */
     /* opacity: .5; */
-    border: 13px solid black;
+    border: 7px solid black;
     width: 80px;
     height: 80px;
     margin: 0;
@@ -357,7 +437,7 @@ a.carousel-control-left{
     width: 15%;
     text-align: center;
 
-    left: -100px;
+    left: -23%;
     color: black;
     opacity: 1;
     font-weight: 700;
@@ -384,7 +464,7 @@ a.carousel-control-right{
     width: 15%;
     text-align: center;
 
-    right: -100px;
+    right: -23%;
     color: black;
     opacity: 1;
     font-weight: 700;
@@ -394,7 +474,7 @@ a.carousel-control-right{
 }
 
 .img-fluid {
-    max-height: 70vh;
+    max-height: 85vh;
     max-width: none!important;
     }
 
@@ -404,8 +484,141 @@ a.carousel-control-right{
     margin: 0;
 }*/
 
+
+/*new collection*/
+
+.album{
+
+    border: none;
+    width: 100%;
+    /*max-width: 660px;
+    min-width: 310px;*/
+    
+    width: 57vh;
+    height: 85vh;
+    max-width: 660px;
+    max-height: 990px;
+    min-width: 400px;
+    min-height: 600px;
+}
+
+.row{
+    margin: 0;
+}
+
+.card{
+    float: left;
+    padding: 0;
+    margin-bottom: 0;
+    border: 0;
+    width: 33.333%;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    /*max-height: 330px;
+    max-width: 220px;*/
+    /*max-height: calc(85vh / 3);*/
+    min-height: 200px;
+    min-width: calc(400px /3);
+    max-width: calc(85vh / 2);
+}
+
+
+/*.album{
+
+border: none;
+width: 100%;
+}
+
+.card img{
+    width: auto;
+    height: 100%;
+    max-height: calc(85vh / 3);
+    max-width: none!important;
+}
+.card{
+    float: left;
+    padding: 0;
+    margin-bottom: 0;
+    border: 0;
+    width: 33.333%;
+}
+
+.row{
+    margin: 0;
+}*/
+
+#collectionBG_R{
+    position: fixed;
+    right: -203px;
+    bottom: 100px;
+    width: 226px;
+}
+
+#collectionBG_L{
+    position: fixed;
+left: -180px;
+bottom: -90px;
+width: 248px;
+}
+
+/*tablet version */
+@media screen and (max-width: 800px) {
+    
+
+    
+
+    
+
+    #video {
+        width: 100%;
+        margin: auto;
+        vertical-align: middle;
+        display: flex;
+    }
+
+    #video img{
+    position: absolute;
+    bottom: -86px;
+    right: calc( calc(100% - 500px) / 2);
+    width: 500px;
+
+    }
+
+    #videoFull{
+         width: 100vw;
+        margin: auto;
+
+    }
+
+
+}
+
 /*mobile version */
-@media screen and (max-width: 768px) and (orientation:portrait){
+@media screen and (max-width: 800px) and (orientation:portrait){
+    
+    .about{
+        position: fixed;
+right: calc(100% - 65px);
+top: calc(75%);
+transform: rotate(-90deg);
+text-align: center;
+z-index: 300;
+cursor: pointer;
+    } 
+        
+    .collection{
+        position: fixed;
+        right: 8px;
+        bottom: 22%;
+        transform: rotate(90deg);
+        text-align: center;
+        z-index: 300;
+        cursor: pointer;
+    } 
+
     #container{
         background-color:#000000;
     }
@@ -451,26 +664,31 @@ a.carousel-control-right{
     }
     
 
-    
+    .about_container {
+        margin: 86px auto;
+        display: block;
+    }
 
     .left {
         width: 100%;
-        clear: left;
+        /*clear: left;*/
+        display: block;
         box-sizing: border-box;
-        background-color: lightgray;
+        /*background-color: lightgray;*/
         font-size: 18px;
         font-weight: 500;
         line-height: 130%;
-        padding: 40px 35px 0;
+        padding: 40px 0 1rem;
         margin-top: 0;
     }
 
     .right{
         width: 100%;
-        clear: right;
-        padding: 40px 35px 25px;
+        /*clear: right;*/
+        display: block;
+        padding: 40px 0 45px;
         box-sizing: border-box;
-        background-color: lightgray;
+        /*background-color: lightgray;*/
         font-weight: 300;
         line-height: 160%;
         margin-top: 0;
@@ -478,11 +696,32 @@ a.carousel-control-right{
         font-size: 0.8em;
     }
 
+    .back{
+        position: absolute;
+        bottom: calc( 1em);
+        font-weight: 400;
+        text-align: right;
+    }
+
     #video {
         width: 100%;
         margin: auto;
         vertical-align: middle;
         display: flex;
+    }
+
+     #video img{
+    position: absolute;
+    bottom: -68px;
+    right: calc( calc(100% - 400px) / 2);
+    width: 400px;
+
+    }
+
+    #videoFull{
+         width: 100vw;
+        margin: auto;
+
     }
 
 
