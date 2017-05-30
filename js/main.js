@@ -180,8 +180,10 @@ $(document).ready(function() {
 		 $(".carousel-item").remove();
 		 $(".album").hide();
 		 $("#carouselEx").show();
-
-
+		 $(".card").remove();
+		 $("#modal-fullscreen").css({
+			"background-image": "url(image/SlideBG.svg)"
+		});
 	});
 
 
@@ -196,6 +198,7 @@ $(document).ready(function() {
 		$("#modal-fullscreen").css({
 			"background-image": "none"
 		});
+
 		$("#carouselEx").hide();
 		$(".album").show();
 
@@ -257,6 +260,7 @@ $(document).ready(function() {
 
 	$('#modal-fullscreen').on('hidden.bs.modal', function (e) {
 	     $(".carousel-item").remove();
+	     $(".card").remove();
 	  });
 });
 
