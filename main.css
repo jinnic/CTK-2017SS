@@ -180,7 +180,7 @@ div.scroll-image > div {
 */
     
   
-    display:flex;
+    /*display:flex;*/
     /*justify-content:center;
     align-items:center;*/
     position: relative;
@@ -192,7 +192,7 @@ video{
 
 #video img{
     position: absolute;
-    bottom: -86px;
+    bottom: -76px;
     right: calc(100% / 12);
     width: 500px;
 
@@ -726,12 +726,12 @@ cursor: pointer;
         width: 100%;
         margin: auto;
         vertical-align: middle;
-        /*display: flex;*/
+        display: flex;
     }
 
      #video img{
     position: absolute;
-    bottom: -78px;
+    bottom: -86px;
     right: calc( calc(100% - 400px) / 2);
     width: 400px;
 
