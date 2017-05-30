@@ -56,7 +56,7 @@ a:hover{
 .collection{
     position: fixed;
     right: 22%;
-    bottom: 1.2em;
+    bottom: 1.3em;
     /*transform: rotate(90deg);*/
     text-align: center;
     z-index: 300;
