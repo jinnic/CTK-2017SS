@@ -525,10 +525,10 @@ a.carousel-control-right{
 }
 
 .card{
-    float: left;
+    /*float: left;
     padding: 0;
     margin-bottom: 0;
-    border: 0;
+    border: 0;*/
     width: 33.333%;
 }
 
@@ -540,10 +540,26 @@ a.carousel-control-right{
     /*max-height: calc(85vh / 3);*/
     min-height: 200px;
     min-width: calc(400px /3);
-    max-width: calc(85vh / 2);
+    max-width: calc(calc(85vh / 3) *2);
 }
 
+.transition{
+    -webkit-transition: all 2s ease;  
+  -moz-transition: all 2s ease;  
+  -o-transition: all 2s ease;  
+  -ms-transition: all 2s ease;  
+  transition: all 2s ease;
+}
 
+.transition-active {
+  /*background-color: #45CEE0;*/
+  width: 57vh;
+  height: 85vh;
+  position: absolute;
+  top:0;
+  border: 0;
+  z-index: 1;
+}
 /*.album{
 
 border: none;
@@ -573,6 +589,8 @@ width: 100%;
     right: -203px;
     bottom: 100px;
     width: 226px;
+        z-index: 3;
+
 }
 
 #collectionBG_L{
@@ -580,6 +598,8 @@ width: 100%;
 left: -180px;
 bottom: -90px;
 width: 248px;
+    z-index: 3;
+
 }
 
 /*tablet version */

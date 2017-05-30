@@ -203,12 +203,18 @@ $(document).ready(function() {
 		$(".album").show();
 
 	  for(var i=0 ; i< collectionImg.length ; i++) {
-	    $('<div class="card"><img class="d-block" src="'+collectionImg[i]+'"></div>').appendTo('.row');
-
+	    $('<div class="card"><a class="abc"><img class="d-block transition"  src="'+collectionImg[i]+'"></a></div>').appendTo('.row');
 	  }
+
+	  $(".card").click(function(){ 
+		console.log($(this).children().attr("class")+" image CLICK");
+		 $(this).toggleClass('transition-active');
+	});
+
 
 	});
 
+	
 	
 
 
@@ -218,6 +224,7 @@ $(document).ready(function() {
 
 
 	$(".sImage").click(function(){ 
+		console.log(this.class + "image CLICK");
 		$(".album").hide()
 	// console.log(this.id);
 		switch(this.id){
