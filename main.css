@@ -56,7 +56,7 @@ a:hover{
 .collection{
     position: fixed;
     right: 22%;
-    bottom: 1.3em;
+    bottom: 1.5em;
     /*transform: rotate(90deg);*/
     text-align: center;
     z-index: 300;
@@ -231,7 +231,7 @@ video{
     box-sizing: border-box;
     background-color: white;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 150%;
     padding: 100px 0 100px;
     display: table-cell;
@@ -252,6 +252,20 @@ video{
     font-weight: 300;
     line-height: 160%;
     display: table-cell;
+}
+
+.websiteLink{
+    opacity: 1;
+    text-decoration: none;
+}
+
+.websiteLink:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.bold{
+    font-weight: 500;
 }
 
 /*older version*/
