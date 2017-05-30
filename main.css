@@ -44,21 +44,25 @@ a:hover{
 .about{
     position: fixed;
     right: 24%;
-    top: 40px;
+    top: 1.2em;
     text-align: center;
     z-index: 300;
     cursor: pointer;
     /*transform: rotate(-90deg);*/
+    font-weight: 400;
+    font-size: 1.1em;
 } 
     
 .collection{
     position: fixed;
-    right: 23%;
-    bottom: 40px;
+    right: 24%;
+    bottom: 1.2em;
     /*transform: rotate(90deg);*/
     text-align: center;
     z-index: 300;
     cursor: pointer;
+    font-weight: 400;
+    font-size: 1.1em;
 } 
 .main {
     position: fixed;
