@@ -306,6 +306,7 @@ video{
     position: absolute;
     bottom: calc(100px + 1em);
     font-weight: 400;
+    cursor: pointer;
 }
 
 
@@ -314,7 +315,6 @@ video{
     position: relative;
     clear: both;
     background-color: white;
-    z-index: 400;
 }
 
 
@@ -719,18 +719,19 @@ cursor: pointer;
         bottom: calc( 1em);
         font-weight: 400;
         text-align: right;
+        cursor: pointer;
     }
 
     #video {
         width: 100%;
         margin: auto;
         vertical-align: middle;
-        display: flex;
+        /*display: flex;*/
     }
 
      #video img{
     position: absolute;
-    bottom: -68px;
+    bottom: -78px;
     right: calc( calc(100% - 400px) / 2);
     width: 400px;
 
