@@ -219,6 +219,9 @@ $(document).ready(function() {
 		set video volume
 		*/
      	$("video").prop("volume", 0.2);
+     	$("#modal-fullscreen").css({
+			"background-image": "url(image/videoBG.svg)"
+		});
      });
 
 	/*
