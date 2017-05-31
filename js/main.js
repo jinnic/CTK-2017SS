@@ -10,7 +10,15 @@ $(document).ready(function() {
 	*/
 
 	$("video").prop("volume", 0.2);
-
+	$("#container").hide();
+	$("#about").hide();
+	$(".left-logo").toggleClass('left-logo-active');
+	$(".right-logo").toggleClass('right-logo-active');
+	$("#landing").click(function(){
+		$("#landing").hide();
+		$("#container").show();
+		$("#about").show();
+	});
 	// $('video').each(function(){
 			       
 	// 		           $(this).volume = 0.4;
@@ -47,7 +55,10 @@ $(document).ready(function() {
 	$(window).scroll(function() {
     //         	var video = $('video');
     //         	var videoY = video.offset();
-    			
+
+     			$("#landing").hide();
+				$("#container").show();
+				$("#about").show();
     			fadeOnScroll();
 
 				// $( "#demo2" ).html( "Vertically: " + LBy.top + "px" );
