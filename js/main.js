@@ -113,23 +113,19 @@ $(document).ready(function() {
 
 			  	if ($('#about').is(':in-viewport')) {
 			  		console.log("about in viewport");
+			  		 $(".menu").hide();
 			  	}else{
 			  		console.log("about NOT in viewport");
 			  		$(".trans-image:first").css("top",0 + "vh");
 			  	}
 
-			  	$(".left ").each(function(){
+			  	$(".right ").each(function(){
 			       if ($(this).is(':in-viewport')) {
 			           
 			           $(".menu").hide();
 			           // console.log("left in viewport");
 
-			       } else {
-			          
-			           $(".menu").show();
-			           // console.log("left NOT in viewport");
-			           // $(".trans-image:first").css("top",0 + "vh")
-			       }
+			       } 
 			  	});
 
 
