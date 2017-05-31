@@ -5,20 +5,56 @@ var scrollContainer_totalHeight = 0;
 
 $(document).ready(function() {
 
+
+	/*
+		no scroll : to block scrolling down while opening animation is happening
+	*/
+
+	function noscroll() {
+	  window.scrollTo( 0, 0 );
+	}
+
 	/*
 		set video volume
 	*/
 
 	$("video").prop("volume", 0.2);
-	$("#container").hide();
-	$("#about").hide();
-	$(".left-logo").toggleClass('left-logo-active');
-	$(".right-logo").toggleClass('right-logo-active');
-	$("#landing").click(function(){
-		$("#landing").hide();
-		$("#container").show();
-		$("#about").show();
-	});
+
+	// $("#container").hide();
+	// $("#about").hide();
+	// $(".left-logo").toggleClass('left-logo-active');
+	// $(".right-logo").toggleClass('right-logo-active');
+	// $("#landing").click(function(){
+	// 	$("#landing").hide();
+	// 	$("#container").show();
+	// 	$("#about").show();
+	// });
+
+	/*
+		opening animation event listner
+	*/
+
+	var e = document.getElementById("landing");
+	e.addEventListener("animationstart", listener, false);
+	e.addEventListener("animationend", listener, false);
+	e.className = "fadeOut";
+
+	function listener(e){
+		switch(e.type){
+			case "animationstart": 
+				window.addEventListener('scroll', noscroll);
+				break;
+			case "animationend":
+				// $("#container").show();
+				// $("#about").show();
+				window.removeEventListener('scroll', noscroll);
+				$("#landing").hide();
+				break;
+		}
+	}
+
+
+
 	// $('video').each(function(){
 			       
 	// 		           $(this).volume = 0.4;
@@ -56,9 +92,6 @@ $(document).ready(function() {
     //         	var video = $('video');
     //         	var videoY = video.offset();
 
-     			$("#landing").hide();
-				$("#container").show();
-				$("#about").show();
     			fadeOnScroll();
 
 				// $( "#demo2" ).html( "Vertically: " + LBy.top + "px" );

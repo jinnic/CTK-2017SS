@@ -35,9 +35,16 @@ a:hover{
     text-decoration:none;
 }
 
-#landing{
+#landing, .fadeOut{
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
+    animation-name: fadeOut;
+    animation-duration: 3.5s;
+    background-color: white;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 900;
 }
 .left-logo {
     background-color: white;
@@ -46,14 +53,17 @@ a:hover{
     width: 50%;
     height: 50vh;
     padding: 0;
-    top: 75vh;
+    /*top: 75vh;*/
     -ms-transform: translate(0%, 50%);
     transform: translate(0%, 50%);
-        -webkit-transition: all 2s ease;  
+    /*-webkit-transition: all 2s ease;  
     -moz-transition: all 2s ease;  
     -o-transition: all 2s ease;  
     -ms-transition: all 2s ease;  
-    transition: all 2s ease;
+    transition: all 2s ease;*/
+    animation-name: opening_Left;
+    animation-duration: 3.5s;
+
 }
 
 .right-logo {
@@ -64,14 +74,37 @@ a:hover{
     height: 50vh;
     padding: 0;
     left: 50vw;
-    top: -75vh;
+    /*top: -75vh;*/
     -ms-transform: translate(0%, 50%);
     transform: translate(0%, 50%);
-    -webkit-transition: all 2s ease;  
+    
+    /*-webkit-animation-name: all 2s ease;  
     -moz-transition: all 2s ease;  
     -o-transition: all 2s ease;  
-    -ms-transition: all 2s ease;  
-    transition: all 2s ease;
+    -ms-transition: all 2s ease;*/  
+    animation-name: opening_Right;
+    animation-duration: 3.5s;
+}
+
+@keyframes opening_Left{
+    0% { top: 75vh;}
+    45% {top: 0vh;}
+    65% { top: 0vh;}
+    100% { top: -75vh;}
+}
+
+@keyframes opening_Right{
+    0% { top: -75vh;}
+    45% { top: 0vh;}
+    65% { top: 0vh;}
+    100% {top: 75vh;}
+}
+
+@keyframes fadeOut{
+    0% {opacity: 1; }
+    45% {opacity: 1;}
+    65% {opacity: 1; }
+    100% {opacity: 0;}
 }
 
 .left-logo img{
@@ -702,9 +735,316 @@ width: 100%;
 
 
 }
-
 /*mobile version */
-@media screen and (max-width: 768px) and (orientation:portrait){
+@media screen and (max-width: 400px) and (orientation:portrait){
+    /*
+        opening animation
+    */
+
+    .left-logo {
+        background-color: white;
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 35vh;
+        padding: 0;
+        /*top: 75vh;*/
+        -ms-transform: translate(0%, 85%);
+        transform: translate(0%, 85%);
+        /*-webkit-transition: all 2s ease;  
+        -moz-transition: all 2s ease;  
+        -o-transition: all 2s ease;  
+        -ms-transition: all 2s ease;  
+        transition: all 2s ease;*/
+        animation-name: opening_Left;
+        animation-duration: 3.5s;
+
+    }
+
+    .right-logo {
+        background-color: white;
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 35vh;
+        padding: 0;
+        left: 50vw;
+        /*top: -75vh;*/
+        -ms-transform: translate(0%, 85%);
+        transform: translate(0%, 85%);
+        
+        /*-webkit-animation-name: all 2s ease;  
+        -moz-transition: all 2s ease;  
+        -o-transition: all 2s ease;  
+        -ms-transition: all 2s ease;*/  
+        animation-name: opening_Right;
+        animation-duration: 3.5s;
+    }
+
+    @keyframes opening_Left{
+        0% { left: -100vw;}
+        45% {left: 0vw;}
+        65% { left: 0vw;}
+        100% { left: 0vw;}
+    }
+
+    @keyframes opening_Right{
+        0% { left: 100vw;}
+        45% { left: 50vw;}
+        65% { left: 50vw;}
+        100% {left: 50vw;}
+    }
+
+    
+    /*
+        MENU
+    */
+    .about{
+        position: fixed;
+        right: calc(100% - 2.4em);
+        top: calc(75%);
+        transform: rotate(-90deg);
+        text-align: center;
+        z-index: 300;
+        cursor: pointer;
+        font-size: 0.8em;
+    } 
+        
+    .collection{
+        position: fixed;
+        right: -1.5em;
+        bottom: 22%;
+        transform: rotate(90deg);
+        text-align: center;
+        z-index: 300;
+        cursor: pointer;
+        font-size: 0.8em;
+    } 
+
+    /*
+        LANDING
+    */
+
+    #container{
+        background-color:#000000;
+    }
+    .split{
+        display: block;
+        position: relative;
+        width: 100%;
+        padding: 0;
+        height: 50%;
+    }
+
+    .left-holder {
+        z-index: 2;
+        min-height: 1px;
+        background-color:white;
+/*        float:left;*/
+    }
+
+    .right-holder {
+        min-height: 100vh;
+        background-color:white;
+/*        float: right;*/
+    }
+    .trans-image {
+        width: 100%;
+        height: 50%;
+        opacity: 1;
+        font-size: 50vh;
+        position: fixed;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 50vh;
+    }
+
+    .scroll-image{
+        width: 100%;
+        height: 50vh;
+        opacity: 1;
+        text-align: center;
+         display:flex;
+         justify-content:center;
+         align-items:center;
+    }
+    
+    /*
+        ABOUT
+    */
+
+    .about_container {
+        margin: 51px auto;
+        display: block;
+        width: calc(100vw * 3/4);
+    }
+
+    .left {
+        width: 100%;
+        /*clear: left;*/
+        display: block;
+        box-sizing: border-box;
+        /*background-color: lightgray;*/
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 130%;
+        padding: 40px 0 0;
+        margin-top: 0;
+    }
+
+    .right{
+        width: 100%;
+        /*clear: right;*/
+        display: block;
+        padding: 40px 0 2em;
+        box-sizing: border-box;
+        /*background-color: lightgray;*/
+        font-weight: 300;
+        line-height: 160%;
+        margin-top: 0;
+        word-wrap: break-word;
+        font-size: 0.8em;
+    }
+
+    .back{
+        position: absolute;
+        bottom: 0;
+        font-weight: 400;
+        text-align: right;
+        cursor: pointer;
+        padding-top: 1em;
+    }
+
+    #video {
+        width: 100%;
+        margin: auto;
+        vertical-align: middle;
+        /*display: flex;*/
+    }
+
+    #video img{
+        position: absolute;
+        bottom: -44px;
+        right: calc( calc(100% - 300px) / 2);
+        width: 300px;
+
+    }
+
+    #videoFull{
+        width: 100vw;
+        margin: auto;
+    }
+
+    /*
+        SCROLL IMAGE - MODAL
+    */
+    .modal-header {
+        
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        /*right: 0px;
+        top: 0px;*/
+    }
+
+
+    .close {
+        font-size: 50px;
+        line-height: 1;
+        width: 50px;
+        height: 50px;
+        border: 6px solid black;
+    }
+
+    .img-fluid{
+        max-height: 65vh;
+    }
+
+    a.carousel-control-right {
+        right: -16%;
+    }
+    a.carousel-control-left {
+        left: -16%;
+    }
+
+    .album{
+        width: 50vh;
+        height: 75vh;
+    }
+
+    #collectionBG_L {
+        left: -120px;
+        bottom: -90px;
+        width: 160px;
+    }
+
+    #collectionBG_R {
+        right: -143px;
+        bottom: 100px;
+        width: 166px;
+    }
+
+}
+/*mobile version */
+@media screen and (max-width: 768px) and (min-width: 400px) and (orientation:portrait){
+    /*
+         opening animation
+    */
+
+    .left-logo {
+        background-color: white;
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 40vh;
+        padding: 0;
+        /*top: 75vh;*/
+        -ms-transform: translate(0%, 60%);
+        transform: translate(0%, 60%);
+        /*-webkit-transition: all 2s ease;  
+        -moz-transition: all 2s ease;  
+        -o-transition: all 2s ease;  
+        -ms-transition: all 2s ease;  
+        transition: all 2s ease;*/
+        animation-name: opening_Left;
+        animation-duration: 3.5s;
+
+    }
+
+    .right-logo {
+        background-color: white;
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 40vh;
+        padding: 0;
+        left: 50vw;
+        /*top: -75vh;*/
+        -ms-transform: translate(0%, 60%);
+        transform: translate(0%, 60%);
+        
+        /*-webkit-animation-name: all 2s ease;  
+        -moz-transition: all 2s ease;  
+        -o-transition: all 2s ease;  
+        -ms-transition: all 2s ease;*/  
+        animation-name: opening_Right;
+        animation-duration: 3.5s;
+    }
+
+    @keyframes opening_Left{
+        0% { left: -100vw;}
+        45% {left: 0vw;}
+        65% { left: 0vw;}
+        100% { left: 0vw;}
+    }
+
+    @keyframes opening_Right{
+        0% { left: 100vw;}
+        45% { left: 50vw;}
+        65% { left: 50vw;}
+        100% {left: 50vw;}
+    }
+
     
     /*
         MENU
