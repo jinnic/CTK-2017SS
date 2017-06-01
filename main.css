@@ -689,18 +689,17 @@ width: 100%;
 
 #collectionBG_R{
     position: fixed;
-    right: -203px;
+    right: -40%;
     bottom: 100px;
-    width: 226px;
-        z-index: 3;
-
+    width: 50%;
+    z-index: 3;
 }
 
 #collectionBG_L{
     position: fixed;
-    left: -180px;
-    bottom: -90px;
-    width: 248px;
+    left: -40%;
+    bottom: -50px;
+    width: 50%;
     z-index: 3;
 
 }
@@ -986,7 +985,7 @@ width: 100%;
         height: 75vh;
     }
 
-    #collectionBG_L {
+   /* #collectionBG_L {
         left: -120px;
         bottom: -90px;
         width: 160px;
@@ -996,10 +995,10 @@ width: 100%;
         right: -143px;
         bottom: 100px;
         width: 166px;
-    }
+    }*/
 
 }
-/*mobile version */
+/*tablet version */
 @media screen and (max-width: 768px) and (min-width: 400px) and (orientation:portrait){
     /*
          opening animation
@@ -1235,7 +1234,7 @@ width: 100%;
         height: 75vh;
     }
 
-    #collectionBG_L {
+    /*#collectionBG_L {
         left: -120px;
         bottom: -90px;
         width: 160px;
@@ -1245,5 +1244,5 @@ width: 100%;
         right: -143px;
         bottom: 100px;
         width: 166px;
-    }
+    }*/
 }
