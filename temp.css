@@ -32,13 +32,13 @@ div, a, button{
 
 a{
     color:black;
+    color: #253874;
     text-decoration:none;
 }
 
 a:hover{
     color:black;
     opacity: .5;
-    text-decoration:none;
 }
 
 #landing, .fadeOut{
@@ -139,27 +139,32 @@ a:hover{
 
 .about{
     position: fixed;
-    right: calc(25% - 1.2em);
-    top: 1.2em;
+
     text-align: center;
     z-index: 300;
     cursor: pointer;
-    /*transform: rotate(-90deg);*/
-    font-weight: 400;
-    font-size: 1.1em;
-} 
-    
+    font-weight: 100;
+    font-size: 3em;
+    top: 50%;
+    top: 50%;
+    left: 0;
+    -ms-transform: translate(-20%, -50%) rotate(-90deg);
+    transform: translate(-20%, -50%) rotate(-90deg);
+}
+
 .collection{
     position: fixed;
-    right: calc(25% - 2.5em);
-    bottom: 1.5em;
-    /*transform: rotate(90deg);*/
     text-align: center;
     z-index: 300;
     cursor: pointer;
-    font-weight: 400;
-    font-size: 1.1em;
+    font-size: 3em;
+    font-weight: 100;
+    top: 50%;
+    right: 0;
+    -ms-transform: translate(30%, -50%) rotate(90deg);
+    transform: translate(30%, -50%) rotate(90deg);
 } 
+
 .main {
     position: fixed;
     left: 30px;
@@ -173,16 +178,11 @@ a:hover{
     display: block;
     position: relative;
 */
-    width: 50%;
+    width: 100%;
     padding: 0;
 /*    height: 100%;*/
 }
 
-.left-holder {
-    min-height: 100vh;
-    background-color:white;
-    float:left;
-}
 
 .right-holder {
     min-height: 100vh;
@@ -318,6 +318,7 @@ video{
     display: table;
 
     width: calc(100vw * 2/3);
+    color: #253874;
 
 }
 .left{
@@ -353,11 +354,13 @@ video{
 .websiteLink{
     opacity: 1;
     text-decoration: none;
+    color: #253874;
 }
 
 .websiteLink:hover{
     opacity: 1;
     text-decoration: underline;
+    color: #253874;
 }
 
 .bold{
@@ -711,7 +714,17 @@ width: 100%;
 
 /*tablet version */
 @media screen and (max-width: 700px) {
-    
+    /*
+        MENU
+    */
+    .about{
+        
+        font-size: 2em;
+    } 
+        
+    .collection{
+       font-size: 2em;
+    } 
 
     .modal-header {
         
@@ -750,6 +763,52 @@ width: 100%;
 
     #videoFull{
         width: 100vw;
+    }
+    
+    /*
+        ABOUT
+    */
+
+    .about_container {
+        margin: 51px auto 80px;
+        display: block;
+        width: calc(100vw * 3/4);
+    }
+
+    .left {
+        width: 100%;
+        /*clear: left;*/
+        display: block;
+        box-sizing: border-box;
+        /*background-color: lightgray;*/
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 130%;
+        padding: 40px 0 0;
+        margin-top: 0;
+    }
+
+    .right{
+        width: 100%;
+        /*clear: right;*/
+        display: block;
+        padding: 40px 0 2em;
+        box-sizing: border-box;
+        /*background-color: lightgray;*/
+        font-weight: 300;
+        line-height: 160%;
+        margin-top: 0;
+        word-wrap: break-word;
+        font-size: 0.8em;
+    }
+
+    .back{
+        position: absolute;
+        bottom: 0;
+        font-weight: 400;
+        text-align: right;
+        cursor: pointer;
+        padding-top: 1em;
     }
 
 
@@ -819,25 +878,11 @@ width: 100%;
         MENU
     */
     .about{
-        position: fixed;
-        right: calc(100% - 2.4em);
-        top: calc(75%);
-        transform: rotate(-90deg);
-        text-align: center;
-        z-index: 300;
-        cursor: pointer;
-        font-size: 0.8em;
+        font-size: 1.3em;
     } 
         
     .collection{
-        position: fixed;
-        right: -1.5em;
-        bottom: 22%;
-        transform: rotate(90deg);
-        text-align: center;
-        z-index: 300;
-        cursor: pointer;
-        font-size: 0.8em;
+        font-size: 1.3em;
     } 
 
     /*
@@ -852,20 +897,13 @@ width: 100%;
         position: relative;
         width: 100%;
         padding: 0;
-        height: 50%;
+        /*height: 100%;*/
     }
 
-    .left-holder {
-        z-index: 2;
-        min-height: 1px;
-        background-color:white;
-/*        float:left;*/
-    }
 
     .right-holder {
         min-height: 100vh;
         background-color:white;
-/*        float: right;*/
     }
     .trans-image {
         width: 100%;
@@ -880,7 +918,7 @@ width: 100%;
 
     .scroll-image{
         width: 100%;
-        height: 50vh;
+        /*height: 50vh;*/
         opacity: 1;
         text-align: center;
          display:flex;
@@ -1068,25 +1106,12 @@ width: 100%;
         MENU
     */
     .about{
-        position: fixed;
-        right: calc(100% - 2.4em);
-        top: calc(75%);
-        transform: rotate(-90deg);
-        text-align: center;
-        z-index: 300;
-        cursor: pointer;
-        font-size: 0.8em;
+        
+        font-size: 1.3em;
     } 
         
     .collection{
-        position: fixed;
-        right: -1.5em;
-        bottom: 22%;
-        transform: rotate(90deg);
-        text-align: center;
-        z-index: 300;
-        cursor: pointer;
-        font-size: 0.8em;
+       font-size: 1.3em;
     } 
 
     /*
@@ -1101,15 +1126,10 @@ width: 100%;
         position: relative;
         width: 100%;
         padding: 0;
-        height: 50%;
+        /*height: 100%;*/
     }
 
-    .left-holder {
-        z-index: 2;
-        min-height: 1px;
-        background-color:white;
-/*        float:left;*/
-    }
+
 
     .right-holder {
         min-height: 100vh;
@@ -1129,7 +1149,7 @@ width: 100%;
 
     .scroll-image{
         width: 100%;
-        height: 50vh;
+        /*height: 50vh;*/
         opacity: 1;
         text-align: center;
          display:flex;

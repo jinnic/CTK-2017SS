@@ -97,38 +97,7 @@ $(document).ready(function() {
 				// $( "#demo2" ).html( "Vertically: " + LBy.top + "px" );
 				// console.log("#myDiv scrolling!!!");
 
-			    $('video').each(function(){
-			       if ($(this).is(':in-viewport')) {
-			           $(this)[0].play();
-			           console.log("video in viewport");
-			           $(".menu").hide();
-
-			       } else {
-			           $(this)[0].pause();
-			           console.log("video NOT in viewport");
-			           $(".menu").show();
-			           // $(".trans-image:first").css("top",0 + "vh");
-			       }
-			  	});
-
-			  	if ($('#about').is(':in-viewport')) {
-			  		console.log("about in viewport");
-			  		 $(".menu").hide();
-			  	}else{
-			  		console.log("about NOT in viewport");
-			  		$(".trans-image:first").css("top",0 + "vh");
-			  	}
-
-			  	$(".right ").each(function(){
-			       if ($(this).is(':in-viewport')) {
-			           
-			           $(".menu").hide();
-			           // console.log("left in viewport");
-
-			       } 
-			  	});
-
-
+			    
 
 			    // console.log("WINDOW scrolling!!!");
 			    // checkScroll();
@@ -245,7 +214,7 @@ $(document).ready(function() {
 	// });
 
 
-	var collectionImg = ['image/ctk_01_C.jpg','image/ctk_01_C.jpg','image/ctk_01_C.jpg','image/ctk_02_C.jpg','image/ctk_02_C.jpg','image/ctk_02_C.jpg','image/ctk_03_C.jpg','image/ctk_03_C.jpg','image/ctk_03_C.jpg'];
+	var collectionImg = ['image/ctk_01.jpg','image/ctk_02.jpg','image/ctk_03.jpg','image/ctk_04.jpg','image/ctk_05.jpg','image/ctk_06.jpg','image/ctk_07.jpg','image/ctk_08.jpg'];
 
 	$(".collection").click(function(){ 
 		$("#modal-fullscreen").css({
@@ -293,23 +262,23 @@ $(document).ready(function() {
 	// console.log(this.id);
 		switch(this.id){
 			case "sImage01":
-			var imgData = ['image/ctk_01.jpg','image/ctk_01.jpg','image/ctk_01.jpg'];
+			var imgData = ['image/ctk_01.jpg','image/ctk_02.jpg','image/ctk_03.jpg','image/ctk_04.jpg','image/ctk_05.jpg','image/ctk_06.jpg','image/ctk_07.jpg','image/ctk_08.jpg'];
 			break;
 
 			case "sImage02":
-			var imgData = ['image/ctk_02.jpg','image/ctk_02.jpg','image/ctk_02.jpg'];
+			var imgData = ['image/ctk_01.jpg','image/ctk_02.jpg','image/ctk_03.jpg','image/ctk_04.jpg','image/ctk_05.jpg','image/ctk_06.jpg','image/ctk_07.jpg','image/ctk_08.jpg'];
 			break;
 
 			case "sImage03":
-			var imgData = ['image/ctk_03.jpg','image/ctk_03.jpg','image/ctk_03.jpg'];
+			var imgData = ['image/ctk_01.jpg','image/ctk_02.jpg','image/ctk_03.jpg','image/ctk_04.jpg','image/ctk_05.jpg','image/ctk_06.jpg','image/ctk_07.jpg','image/ctk_08.jpg'];
 			break;
 
 			case "sImage04":
-			var imgData = ['image/ctk_01.jpg','image/ctk_01.jpg','image/ctk_01.jpg'];
+			var imgData = ['image/ctk_01.jpg','image/ctk_02.jpg','image/ctk_03.jpg','image/ctk_04.jpg','image/ctk_05.jpg','image/ctk_06.jpg','image/ctk_07.jpg','image/ctk_08.jpg'];
 			break;
 
 			case "sImage05":
-			var imgData = ['image/ctk_02.jpg','image/ctk_02.jpg','image/ctk_02.jpg'];
+			var imgData = ['image/ctk_01.jpg','image/ctk_02.jpg','image/ctk_03.jpg','image/ctk_04.jpg','image/ctk_05.jpg','image/ctk_06.jpg','image/ctk_07.jpg','image/ctk_08.jpg'];
 			break;
 		}
 
