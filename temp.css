@@ -5,7 +5,10 @@
 
 /* CSS Document */
 
-
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
 
 body{
     height: 100vh;
