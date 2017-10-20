@@ -245,7 +245,7 @@ $(document).ready(function() {
 	// });
 
 
-	var collectionImg = ['image/ctk_01_C.jpg','image/ctk_01_C.jpg','image/ctk_01_C.jpg','image/ctk_02_C.jpg','image/ctk_02_C.jpg','image/ctk_02_C.jpg','image/ctk_03_C.jpg','image/ctk_03_C.jpg','image/ctk_03_C.jpg'];
+	var collectionImg = ['image/ctk_01_01.jpg','image/ctk_01_01.jpg','image/ctk_01_01.jpg','image/ctk_02_01.jpg','image/ctk_02_01.jpg','image/ctk_02_01.jpg','image/ctk_03_01.jpg','image/ctk_03_01.jpg','image/ctk_03_01.jpg'];
 
 	$(".collection").click(function(){ 
 		$("#modal-fullscreen").css({

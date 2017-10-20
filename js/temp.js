@@ -51,7 +51,7 @@ $(document).ready(function() {
 				$("#landing").hide();
 				break;
 		}
-	}
+	} 
 
 
 
@@ -214,7 +214,7 @@ $(document).ready(function() {
 	// });
 
 
-	var collectionImg = ['image/ctk_01.jpg','image/ctk_02.jpg','image/ctk_03.jpg','image/CTK_04.jpg','image/CTK_05.jpg','image/CTK_06.jpg','image/CTK_07.jpg','image/CTK_08.jpg'];
+	var collectionImg = ['image/ctk_01_03.jpg','image/ctk_02_03.jpg','image/ctk_03_06.jpg','image/ctk_04_02.jpg','image/ctk_05_02.jpg','image/ctk_04_07.jpg','image/ctk_06_03.jpg','image/ctk_06_09.jpg'];
 
 	$(".collection").click(function(){ 
 		$("#modal-fullscreen").css({
@@ -262,23 +262,27 @@ $(document).ready(function() {
 	// console.log(this.id);
 		switch(this.id){
 			case "sImage01":
-			var imgData = ['image/ctk_01.jpg','image/ctk_02.jpg','image/ctk_03.jpg','image/CTK_04.jpg','image/CTK_05.jpg','image/CTK_06.jpg','image/CTK_07.jpg','image/CTK_08.jpg'];
+			var imgData = ['image/ctk_01_01.jpg','image/ctk_01_02.jpg','image/ctk_01_03.jpg','image/ctk_01_04.jpg','image/ctk_01_05.jpg','image/ctk_01_06.jpg','image/ctk_01_07.jpg','image/ctk_01_08.jpg'];
 			break;
 
 			case "sImage02":
-			var imgData = ['image/ctk_01.jpg','image/ctk_02.jpg','image/ctk_03.jpg','image/CTK_04.jpg','image/CTK_05.jpg','image/CTK_06.jpg','image/CTK_07.jpg','image/CTK_08.jpg'];
+			var imgData = ['image/ctk_02_01.jpg','image/ctk_02_02.jpg','image/ctk_02_03.jpg','image/ctk_02_04.jpg','image/ctk_02_05.jpg','image/ctk_02_06.jpg','image/ctk_02_07.jpg'];
 			break;
 
 			case "sImage03":
-			var imgData = ['image/ctk_01.jpg','image/ctk_02.jpg','image/ctk_03.jpg','image/CTK_04.jpg','image/CTK_05.jpg','image/CTK_06.jpg','image/CTK_07.jpg','image/CTK_08.jpg'];
+			var imgData = ['image/ctk_03_01.jpg','image/ctk_03_02.jpg','image/ctk_03_03.jpg','image/ctk_03_04.jpg','image/ctk_03_05.jpg','image/ctk_03_06.jpg','image/ctk_03_07.jpg','image/ctk_03_08.jpg','image/ctk_03_09.jpg'];
 			break;
 
 			case "sImage04":
-			var imgData = ['image/ctk_01.jpg','image/ctk_02.jpg','image/ctk_03.jpg','image/CTK_04.jpg','image/CTK_05.jpg','image/CTK_06.jpg','image/CTK_07.jpg','image/CTK_08.jpg'];
+			var imgData = ['image/ctk_04_01.jpg','image/ctk_04_02.jpg','image/ctk_04_03.jpg','image/ctk_04_04.jpg','image/ctk_04_05.jpg','image/ctk_04_06.jpg','image/ctk_04_07.jpg'];
 			break;
 
 			case "sImage05":
-			var imgData = ['image/ctk_01.jpg','image/ctk_02.jpg','image/ctk_03.jpg','image/CTK_04.jpg','image/CTK_05.jpg','image/CTK_06.jpg','image/CTK_07.jpg','image/CTK_08.jpg'];
+			var imgData = ['image/ctk_05_01.jpg','image/ctk_05_02.jpg','image/ctk_05_03.jpg','image/ctk_05_04.jpg','image/ctk_05_05.jpg','image/ctk_05_06.jpg','image/ctk_05_07.jpg','image/ctk_05_08.jpg'];
+			break;
+
+			case "sImage06":
+			var imgData = ['image/ctk_06_01.jpg','image/ctk_06_02.jpg','image/ctk_06_03.jpg','image/ctk_06_04.jpg','image/ctk_06_05.jpg','image/ctk_06_06.jpg','image/ctk_06_07.jpg','image/ctk_06_08.jpg','image/ctk_06_09.jpg','image/ctk_06_10.jpg'];
 			break;
 		}
 
