@@ -27,7 +27,7 @@ p{
     }
 
 
-
+ 
 div, a, button{
     /*transition-duration: 0.4s;*/
 }
@@ -220,6 +220,10 @@ div.scroll-image > div {
       cursor: pointer;
 }
 
+.sImage > div {
+    width: 55vh;
+    height: 55vh;
+}
 
 /*#scrollContainer{
     height: 500vh;
@@ -724,6 +728,11 @@ width: 100%;
         
         font-size: 2em;
     } 
+
+    .sImage > div {
+        width: 50vh;
+        height: 55vh;
+    }
         
     .collection{
        font-size: 2em;
@@ -821,6 +830,11 @@ width: 100%;
     /*
         opening animation
     */
+
+    .sImage > div {
+        width: 50vh;
+        height: 55vh;
+    }
 
     .left-logo {
         background-color: white;
